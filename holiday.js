@@ -62,7 +62,7 @@ if(process.argv[2]){
 
 let main = async () => {
   let local = await loadLocal(HOLIDAYFILE)
-  if(!local)  
+  if(!local || process.env.GOVAPI)  
 	await fetchFromGov(GOVAPI)
   /* Check if the day is a holiday, if yes, return the holiday summary */
 
