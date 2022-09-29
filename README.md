@@ -1,5 +1,8 @@
 # Hong Kong Holiday check 
 
+## install dependences
+npm -i 
+
 ### check today 
 ./holiday 
 
